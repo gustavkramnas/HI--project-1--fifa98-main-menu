@@ -15,7 +15,7 @@ header {
   border-top: none;
   border-right: none;
   border-left: none;
-  background-image: linear-gradient(black, blue, hsl(287, 92%, 35%));
+  background-image: linear-gradient(black, blue, hsl(287, 92%, 35%), black);
   padding-bottom: 20px;
   padding-top: 15px;
 }
@@ -107,7 +107,7 @@ footer {
   border-bottom: none;
   border-right: none;
   border-left: none;
-  background-image: linear-gradient(hsl(287, 92%, 35%), white, black);
+  background-image: linear-gradient(black, hsl(287, 92%, 35%), white, black);
   padding-bottom: 40px;
 }
 
