@@ -1,0 +1,119 @@
+/*---------MOBIL FIRST---------*/
+
+*,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Goldman";
+}
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+/*-------------------*/
+
+header {
+  border: 2px solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-image: linear-gradient(black, blue, hsl(287, 92%, 35%));
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+/*-------------------*/
+.wrap-meny {
+  border-radius: 15px;
+  background-color: rgb(164, 40, 40);
+  max-width: 500px;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 2%;
+  padding-bottom: 1.5%;
+  margin-left: 10%;
+  border: solid white 1px;
+  border-left: none;
+  border-right: none;
+  color: white;
+  cursor: pointer;
+  animation: blinker 2s infinite linear;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*-------------------*/
+main {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(./bilder/empty-soccer-field-illuminated-with-projectors-lights-cartoon_33099-1005.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*-------------------*/
+section {
+  width: 300px;
+  text-align: center;
+  list-style: none;
+}
+/*-------------------*/
+nav li {
+  font-size: 25px;
+  border: 2px rgb(66, 127, 220) solid;
+  border-radius: 18px;
+  border-right: none;
+  border-bottom: none;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  margin-left: 20px;
+  color: white;
+  background-color: rgb(25, 25, 149);
+  cursor: pointer;
+  height: 40px;
+}
+
+nav li:hover {
+  color: yellow;
+  border: 3px orange solid;
+  border-right: none;
+  border-bottom: none;
+  font-size: 30px;
+  width: 400px;
+  opacity: 0.8;
+}
+
+/*-------------------*/
+.absolute-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(20%, -50%);
+}
+.absolute-img-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%);
+}
+/*-------------------*/
+footer {
+  border: 2px solid white;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  background-image: linear-gradient(hsl(287, 92%, 35%), white, black);
+  padding-bottom: 40px;
+}
+
+footer img {
+  width: 200px;
+  height: 80px;
+  padding-top: 10px;
+}
+/*-------------------*/
