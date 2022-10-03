@@ -18,20 +18,22 @@ header {
   background-image: linear-gradient(black, blue, hsl(287, 92%, 35%), black);
   padding-bottom: 20px;
   padding-top: 15px;
+  display: flex;
 }
 /*-------------------*/
-.wrap-meny {
+.header-menu {
   border-radius: 15px;
-  background-color: rgb(164, 40, 40);
-  max-width: 500px;
-  text-align: center;
-  font-size: 50px;
-  margin-top: 2%;
-  padding-bottom: 1.5%;
-  margin-left: 10%;
   border: solid white 1px;
   border-left: none;
   border-right: none;
+  background-color: rgb(164, 40, 40);
+  text-align: center;
+  font-size: 50px;
+  margin-top: 2%;
+  padding-right: 3.5%;
+  padding-left: 3.5%;
+  padding-bottom: 1.5%;
+  margin-left: 5%;
   color: white;
   cursor: pointer;
   animation: blinker 2s infinite linear;
@@ -49,9 +51,15 @@ header {
   }
 }
 /*----------------*/
+
+audio {
+  margin-left: 500px;
+  max-width: 100px;
+}
+/*----------------*/
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-image: url(./bilder/empty-soccer-field-illuminated-with-projectors-lights-cartoon_33099-1005.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,22 +78,23 @@ nav li {
   border-right: none;
   border-bottom: none;
   margin-bottom: 15px;
-  margin-top: 25px;
+  margin-top: 35px;
   margin-left: 20px;
   color: white;
   background-color: rgb(25, 25, 149);
   cursor: pointer;
   height: 40px;
+  width: 330px;
 }
 
-nav li:hover {
+article {
   color: yellow;
-  border: 3px orange solid;
-  border-right: none;
-  border-bottom: none;
-  font-size: 30px;
-  width: 400px;
-  opacity: 0.8;
+  max-width: 200px;
+  margin-top: 70px;
+  margin-bottom: 300px;
+  margin-left: 200px;
+  border: 2px dotted white;
+  font-size: 11px;
 }
 
 /*-------------------*/
@@ -101,6 +110,7 @@ nav li:hover {
   left: 50%;
   transform: translate(50%, -50%);
 }
+
 /*-------------------*/
 footer {
   border: 2px solid white;
@@ -116,4 +126,61 @@ footer img {
   height: 80px;
   padding-top: 10px;
 }
+
 /*-------------------*/
+/*--------media-queries-----------*/
+@media screen and (max-width: 1100px) {
+  article {
+    display: none;
+  }
+
+  .header-menu {
+    font-size: 50px;
+  }
+}
+/*-------------------*/
+@media screen and (max-width: 970px) {
+  .header-menu {
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-left: 12%;
+  }
+}
+/*-------------------*/
+@media screen and (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .header-menu {
+    animation: none;
+  }
+
+  audio {
+    margin-left: 10px;
+  }
+
+  .absolute-img {
+    margin-left: -20%;
+    margin-top: 10%;
+  }
+
+  nav li {
+    width: 250px;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+/*-------------------*/
+@media screen and (min-width: 600px) {
+  nav li:hover {
+    color: yellow;
+    border: 3px orange solid;
+    border-right: none;
+    border-bottom: none;
+    font-size: 30px;
+    width: 400px;
+    opacity: 0.8;
+  }
+}
