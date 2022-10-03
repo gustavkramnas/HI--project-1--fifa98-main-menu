@@ -87,14 +87,14 @@ nav li {
   width: 330px;
 }
 
-article {
+marquee {
   color: yellow;
   max-width: 200px;
   margin-top: 70px;
   margin-bottom: 300px;
   margin-left: 200px;
-  border: 2px dotted white;
   font-size: 11px;
+  font-size: 16px;
 }
 
 /*-------------------*/
@@ -130,7 +130,7 @@ footer img {
 /*-------------------*/
 /*--------media-queries-----------*/
 @media screen and (max-width: 1100px) {
-  article {
+  marquee {
     display: none;
   }
 
