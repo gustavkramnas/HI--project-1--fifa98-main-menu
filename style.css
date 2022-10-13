@@ -26,7 +26,7 @@ header {
   border: solid white 1px;
   border-left: none;
   border-right: none;
-  background-color: rgb(164, 40, 40);
+  background-color: red;
   text-align: center;
   font-size: 50px;
   margin-top: 2%;
@@ -44,15 +44,15 @@ header {
     opacity: 0;
   }
   50% {
-    opacity: 0.5;
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 2;
   }
 }
 /*----------------*/
 
-audio {
+.audio {
   margin-left: 500px;
   max-width: 100px;
 }
@@ -60,18 +60,18 @@ audio {
 main {
   display: flex;
   justify-content: flex-start;
-  background-image: url(./bilder/empty-soccer-field-illuminated-with-projectors-lights-cartoon_33099-1005.jpeg);
+  background-image: url(./bilder/futbol-campo-estadio-luz-escenario_43605-2436.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 /*-------------------*/
-section {
+.container {
   width: 300px;
   text-align: center;
   list-style: none;
 }
 /*-------------------*/
-nav li {
+.unord li {
   font-size: 25px;
   border: 2px rgb(66, 127, 220) solid;
   border-radius: 18px;
@@ -80,11 +80,12 @@ nav li {
   margin-bottom: 15px;
   margin-top: 35px;
   margin-left: 20px;
-  color: white;
-  background-color: rgb(25, 25, 149);
+  color: black;
+  background-color: white;
   cursor: pointer;
   height: 40px;
   width: 330px;
+  list-style: none;
 }
 
 marquee {
@@ -118,10 +119,8 @@ footer {
   border-right: none;
   border-left: none;
   background-image: linear-gradient(black, hsl(287, 92%, 35%), white, black);
-  padding-bottom: 40px;
 }
-
-footer img {
+.footer img {
   width: 200px;
   height: 80px;
   padding-top: 10px;
@@ -136,6 +135,7 @@ footer img {
 
   .header-menu {
     font-size: 50px;
+    background-color: red;
   }
 }
 /*-------------------*/
@@ -171,7 +171,7 @@ footer img {
     margin-top: 10%;
   }
 
-  nav li {
+  .unord li {
     width: 250px;
     margin-top: 10px;
     font-size: 20px;
@@ -183,9 +183,9 @@ footer img {
 }
 /*-------------------*/
 @media screen and (min-width: 600px) {
-  nav li:hover {
-    color: yellow;
-    border: 3px orange solid;
+  .unord li:hover {
+    color: black;
+    border: 3px yellow solid;
     border-right: none;
     border-bottom: none;
     font-size: 30px;
